@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+	<title>DIV TEST</title>
+</head>
+<body>
+<div id="box"></div>
+<button id="start">START</button>
+<button id="pause">PAUSE</button>
+<button id="reset">RESET</button>
+
+<div id="box1"></div>
+<button id="start1">START1</button>
+<button id="pause1">PAUSE1</button>
+<button id="reset1">RESET1</button>
+
+<BR><BR><BR>
+
+
+
+<script type="text/javascript" src="js/newtimer.js"></script>
+<script type="text/javascript">
+	
+function onBodyLoad(){
+	new timer("box","start","pause","reset");
+	new timer("box1","start1","pause1","reset1");
+};
+window.addEventListener('load',onBodyLoad);
+
+</script>
+</body>
+</html>
